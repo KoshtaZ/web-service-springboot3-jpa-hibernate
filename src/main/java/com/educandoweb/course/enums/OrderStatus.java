@@ -28,12 +28,11 @@ public enum OrderStatus {
             return  null;
         }
 
-        for (OrderStatus aux: OrderStatus.values()){
-            if (code.equals(aux.getCode())){
-                return aux;
+        for (OrderStatus value: OrderStatus.values()){
+            if (code.equals(value.getCode())){
+                return value;
             }
         }
-
-        throw new IllegalArgumentException("Id invalid: " + code);
+        throw new IllegalArgumentException("Invalid OrderStatus code: " + code);
     }
 }
