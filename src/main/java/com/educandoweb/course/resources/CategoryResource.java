@@ -29,4 +29,5 @@ public class CategoryResource {
         Category category = service.findById(id);
         return ResponseEntity.ok().body(category);
     }
+
 }
