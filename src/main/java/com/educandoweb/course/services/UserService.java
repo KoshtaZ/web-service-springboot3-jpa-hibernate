@@ -57,7 +57,4 @@ public class UserService {
         entity.setEmail(user.getEmail());
         entity.setPhone(user.getPhone());
     }
-
-
-
 }
